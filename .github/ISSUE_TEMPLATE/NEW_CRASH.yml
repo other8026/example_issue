@@ -24,6 +24,15 @@ body:
     attributes:
       label: Describe the problem
       description: |
-        Please include the crash logs. If the issue can be reproduced, list the steps on how to reproduce the issue here.
+        Describe what happens and how. If the issue can be reproduced, list the steps on how to reproduce the issue here.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Submit the crash log
+      description: |
+        Please include the crash logs here, or provide a link to the logs.
+        If the logs contain private information, we can arrange to receive them another way.
     validations:
       required: true
