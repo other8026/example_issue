@@ -1,18 +1,17 @@
-name: "Submit an issue"
-description: Submit an issue with GrapheneOS
+name: "Issue Report"
+description: File an issue with GrapheneOS
 labels: ["new-issue"]
-title: "Issue: [Issue title]"
+title: "[Issue]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Submit an issue with GrapheneOS.
         Please discuss feature requests on the [official discussion forum](https://discuss.grapheneos.org).
+        If the issue is about another service or app, please file an issue with in the [corresponding issue tracker](https://grapheneos.org/contact#reporting-issues).
   - type: dropdown
     id: is-issue
     attributes:
       label: This is an issue with GrapheneOS
-      description: Use the forum for feature requests. If the issue is with Auditor or another service/app, please use the corresponding issue tracker.
       multiple: false
       options:
         - 'No'
@@ -25,3 +24,5 @@ body:
       label: Describe the problem
       description: |
         Please include any relevant logs. If the issue can be reproduced, list the steps on how to reproduce the issue here.
+    validations:
+      required: true
