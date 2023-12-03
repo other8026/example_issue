@@ -1,0 +1,29 @@
+name: "Submit a Crash Report"
+description: File a crash report
+labels: ["new-crash"]
+title: "[Crash]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please discuss feature requests on the [official discussion forum](https://discuss.grapheneos.org).
+        Feature requests and discussion about feature requests in the issue tracker will be locked and/or closed.
+        If the issue is about another service or app, please file an issue with in the [corresponding issue tracker](https://grapheneos.org/contact#reporting-issues).
+  - type: dropdown
+    id: is-crash
+    attributes:
+      label: This is a crash that happened on GrapheneOS
+      multiple: false
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+        required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the problem
+      description: |
+        Please include the crash logs. If the issue can be reproduced, list the steps on how to reproduce the issue here.
+    validations:
+      required: true
