@@ -13,7 +13,7 @@ body:
     id: is-issue
     attributes:
       label: This is an issue with GrapheneOS
-      multiple: true
+      multiple: false
       options:
         - 'No'
         - 'Yes'
