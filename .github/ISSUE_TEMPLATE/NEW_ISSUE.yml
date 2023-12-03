@@ -1,4 +1,4 @@
-name: "Issue Report"
+name: "Report OS Issue"
 description: File an issue with GrapheneOS
 labels: ["new-issue"]
 title: "[Issue]: "
@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Please discuss feature requests on the [official discussion forum](https://discuss.grapheneos.org).
+        Feature requests and discussion about feature requests in the issue tracker will be locked and/or closed.
         If the issue is about another service or app, please file an issue with in the [corresponding issue tracker](https://grapheneos.org/contact#reporting-issues).
   - type: dropdown
     id: is-issue
